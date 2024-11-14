@@ -21,9 +21,10 @@ def beosztottDb(lista):
     return db
 
 def kinekMinFizetes(lista):
-    minFiz:int=(lista[0].fizetes)
+    minFiz_index:int=(0)
     kinek:str=""
     for i in range (0, len(lista), 1):
-        if (minFiz>lista[i].fizetes):
-            kinek=lista[i].nev
-    return kinek
+        if (lista[minFiz_index].fizetes>lista[i].fizetes):
+            minFiz_index=i
+
+    return minFiz_index
