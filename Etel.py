@@ -10,3 +10,6 @@ class Etel:
     
     def keszul(self):
         self.allapot="kész"
+
+    def __str__(self):                  # toString metódus, 'ef __str__(self):' beépített fgv
+        return f"Étel: {self.nev}, Ár: {self.ar}, Állapot: {self.allapot}"
