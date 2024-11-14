@@ -76,3 +76,18 @@ Hozz létre legalább 5 embert, tedd bele őket listába
 ++ az osztálynak legyen egy fizetés emelés metódusa,
 amelyik a fizetést megemeli a paraméterében megadott százalék értékkel.
 A legkisebb fizetésű ember fizetését emeld meg 20%-al!"""
+from Alkalmazott import Alkalmazott
+import fuggvenyekAlkalmazotthoz
+
+alk_lista=[]
+alk_lista.append(Alkalmazott("Kovács Áron",2001,500000,"gyakornok"))
+alk_lista.append(Alkalmazott("Kenyér Lilla",2000,590000,"beosztott"))
+alk_lista.append(Alkalmazott("Fehér Júlia",1997,700000,"beosztott"))
+alk_lista.append(Alkalmazott("Almási Vivien",2002,500000,"gyakornok"))
+alk_lista.append(Alkalmazott("Epres Péter",1985,1200000,"beosztott"))
+alk_lista.append(Alkalmazott("Falusi Eszter",1990,3000000,"igazgtó"))
+
+print(f"A fizetések összege: {fuggvenyekAlkalmazotthoz.fizSum(alk_lista)}")
+print(f"{fuggvenyekAlkalmazotthoz.legidosebbDolg(alk_lista)} éves a legidősebb dolgozó")
+print(f"{fuggvenyekAlkalmazotthoz.beosztottDb(alk_lista)} ember van beosztott pozícióban")
+print(f"{fuggvenyekAlkalmazotthoz.kinekMinFizetes(alk_lista)}-nak/nek a legkevesebb a fizetése")
